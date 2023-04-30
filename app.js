@@ -1,5 +1,3 @@
-
-// HISTORY FUNCTIONS TO RETRIEVE AND DISPLAY THE USER'S INPUT
 function getHistory() {
     return document.getElementById("history-value").innerText;
 }
@@ -7,8 +5,6 @@ function getHistory() {
 function printHistory(num) {
     document.getElementById("history-value").innerText=num;
 }
-
-// OUTPUT FUNCTIONS TO RETRIEVE AND DISPLAY THE USER'S RESULTS
 function getOutput() {
     return document.getElementById("output-value").innerText;
 }
@@ -29,8 +25,6 @@ function getFormattedNumber(num) {
     var value = n.toLocaleString("en");
     return value;
 }
-
-// FUNCTION TO CLEAR COMAS IN OUTPUT FIELD 
 function reverseNumberFormat(num) {
     return Number(num.replace(/,/g,''));
 }
